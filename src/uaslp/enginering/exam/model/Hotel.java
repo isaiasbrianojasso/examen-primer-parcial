@@ -15,7 +15,7 @@ public class Hotel {
     public Hotel(Object comfort_poo_inn) {
 
     }
-
+//aqui va el metodo add room
     public void reserveRoom(int roomNumber, Guest guest, String arrivalDate, int nights) {
         Reservation reservation = new Reservation();
 
