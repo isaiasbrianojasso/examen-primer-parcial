@@ -12,19 +12,15 @@ public class Room {
         this.string = string;
     }
 
-    public int getNumber() {
+    public int getNumber(){
         return number;
     }
-
     public void setNumber(int number) {
         this.number = number;
     }
 
-    public String getStatus() {
-        return status;
+    public RoomStatus getStatus(){
+        return roomStatus;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }
