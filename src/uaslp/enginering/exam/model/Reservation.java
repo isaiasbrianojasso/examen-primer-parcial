@@ -5,7 +5,6 @@ public class Reservation {
     private String arrivalDate;
     private Guest guest;
     private int nights;
-
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }

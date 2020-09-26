@@ -7,14 +7,12 @@ public class Hotel {
     private String name;
     private ArrayList<Room> rooms;
 
-
-    public Hotel() {
+    public Hotel(String name) {
+        this.name = name;
         reservations = new ArrayList<>();
+        rooms = new ArrayList<>();
     }
 
-    public Hotel(Object comfort_poo_inn) {
-
-    }
 //aqui va el metodo add room
     public void reserveRoom(int roomNumber, Guest guest, String arrivalDate, int nights) {
         Reservation reservation = new Reservation();
@@ -45,5 +43,10 @@ public class Hotel {
 
     public void setRooms(ArrayList<Room> rooms) {
         this.rooms = rooms;
+    }
+
+    public void addRoom(Room room) {
+        if (room != null) rooms.add(room);
+
     }
 }
